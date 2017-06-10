@@ -1,20 +1,25 @@
 {
   "name": "node-template",
-  "description": "A basic template for Node applications with linting",
+  "description": "A basic template for Node applications with linting and Babel transpilation",
   "version": "1.0.0",
   "engines": {
     "node": ">=6.0.0"
   },
-  "main": "app.js",
+  "main": "lib/app.js",
+  "scripts": {
+    "start": "nodemon lib/app.js --exec babel-node --presets latest-minimal"
+  },
   "repository": "https://github.com/iknowhtml/node-template.git",
   "author": "Aki Gao",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.24.1",
+    "babel-preset-latest-minimal": "^1.1.2",
+    "chai": "^4.0.2",
     "eslint": "^3.19.0",
-    "eslint-plugin-node": "^4.2.2"
+    "eslint-plugin-node": "^4.2.2",
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0"
   },
-  "dependencies": {
-    "babel-preset-latest-minimal": "^1.1.2"
-  }
+  "dependencies": {}
 }
