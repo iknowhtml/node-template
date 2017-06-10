@@ -1,8 +1,7 @@
 {
   "ecmaVersion": "7",
   "libs": [
-    "underscore",
-    "chai",
+    "chai"
   ],
   "loadEagerly": [],
   "dontLoad": [
@@ -10,18 +9,23 @@
   ],
   "plugins": {
     "doc_comment": true,
+    "node_resolve": {},
     "node": {
       "dontLoad": "",
       "load": "",
       "modules": ""
     },
-    "node_resolve": {},
+    "commonjs": {},
+    "requirejs": {
+      "baseURL": "",
+      "paths": "",
+      "override": ""
+    },
     "modules": {
       "dontLoad": "",
       "load": "",
       "modules": ""
     },
-    "es_modules": {},
-    "commonjs": {}
+    "es_modules": {}
   }
 }
