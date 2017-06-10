@@ -3,14 +3,18 @@
   "description": "A basic template for Node applications with linting",
   "version": "1.0.0",
   "engines": {
-    "node" : ">=6.0.0"
+    "node": ">=6.0.0"
   },
   "main": "app.js",
   "repository": "https://github.com/iknowhtml/node-template.git",
   "author": "Aki Gao",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.24.1",
     "eslint": "^3.19.0",
     "eslint-plugin-node": "^4.2.2"
+  },
+  "dependencies": {
+    "babel-preset-latest-minimal": "^1.1.2"
   }
 }
