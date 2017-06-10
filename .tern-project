@@ -1,7 +1,8 @@
 {
   "ecmaVersion": "7",
   "libs": [
-    "underscore"
+    "underscore",
+    "chai",
   ],
   "loadEagerly": [],
   "dontLoad": [
@@ -20,6 +21,7 @@
       "load": "",
       "modules": ""
     },
-    "es_modules": {}
+    "es_modules": {},
+    "commonjs": {}
   }
 }
