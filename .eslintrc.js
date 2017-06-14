@@ -1,27 +1,27 @@
 module.exports = {
-  ecmaFeatures: {
-        modules: true
-  },
   parserOptions: {
-      sourceType: "module"
+    ecmaVersion: 7,
+    sourceType: 'module',
+    ecmaFeatures: {
+      modules: true,
+    },
   },
   plugins: ['node'],
   extends: ['eslint:recommended', 'plugin:node/recommended'],
   rules: {
-    "node/no-unsupported-features": 0,
+    'node/no-unsupported-features': 0,
     'node/exports-style': ['error', 'module.exports'],
     'node/no-unpublished-require': [
       'error',
       {
-        allowModules: ['chai']
-      }
+        allowModules: ['chai'],
+      },
     ],
     'no-console': 0,
-    'comma-dangle': ['error', 'only-multiline']
+    'comma-dangle': ['error', 'always-multiline'],
   },
   env: {
-    es6: true,
     node: true,
-    mocha: true
-  }
+    mocha: true,
+  },
 };
