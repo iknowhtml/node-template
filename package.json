@@ -7,11 +7,11 @@
   },
   "main": "lib/app.js",
   "scripts": {
-    "start": "nodemon lib/app.js --exec babel-node --presets latest-minimal",
+    "start": "nodemon src/app.js --exec babel-node --presets latest-minimal",
     "build": "babel lib -d dist",
     "serve": "node dist/app.js",
     "test":  "mocha --compilers js:babel-register",
-    "lint": "eslint --fix lib/ test/"
+    "lint": "eslint --fix src/ test/"
   },
   "repository": "https://github.com/iknowhtml/node-template.git",
   "author": "Aki Gao",
