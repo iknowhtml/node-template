@@ -9,8 +9,7 @@ module.exports = {
   plugins: ['node'],
   extends: ['eslint:recommended', 'plugin:node/recommended'],
   rules: {
-    'node/no-unsupported-features': 0,
-    'node/exports-style': ['error', 'module.exports'],
+    'node/exports-style': ['error', 'exports'],
     'node/no-unpublished-require': [
       'error',
       {
