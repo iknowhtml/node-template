@@ -9,3 +9,4 @@ Checkout this repo, install dependencies, then run the following commands in the
 > cd node-template
 > yarn install
 ```
+Then run `yarn start` to start the application in development mode.
