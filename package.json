@@ -5,7 +5,8 @@
   "engines": {
     "node": ">=8.0.0"
   },
-  "main": "lib/app.js",
+  "type": "modules",
+  "main": "src/app.js",
   "scripts": {
     "start": "nodemon src/app.js --exec babel-node --presets latest-minimal",
     "build": "babel lib -d dist",
