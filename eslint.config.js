@@ -6,16 +6,10 @@ module.exports = {
       modules: true,
     },
   },
-  plugins: ['node'],
-  extends: ['eslint:recommended', 'plugin:node/recommended-module'],
+  plugins: ['prettier'],
+  extends: ['eslint:recommended'],
   rules: {
-    'node/exports-style': ['error', 'exports'],
-    'node/no-unpublished-require': [
-      'error',
-      {
-        allowModules: ['chai'],
-      },
-    ],
+    'prettier/prettier': ['error'],
     'no-console': 0,
     'comma-dangle': ['error', 'always-multiline'],
   },
